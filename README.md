@@ -54,21 +54,22 @@ All backbones are frozen throughout.
 ```
 clip-linearity-mapping/
 ├── Code/
-│   └── Clip_Linear_Recoverability.ipynb   # Main experiment notebook
+│   ├── Clip_Linear_Recoverability.ipynb   # Main experiment notebook (CLIP)
+│   └── Image_Net_MAE,_DINO.ipynb          # MAE and DINO comparison notebook
 ├── figures/                                # All generated figures
 ├── results/                                # Cached probe results (.pkl)
 └── README.md
 ```
 
-## Running the Notebook
+## Running the Notebooks
 
-The notebook is designed to run on a GPU-equipped machine (tested on NVIDIA L40S). It downloads all datasets (CLEVR, DTD, ImageNet-Mini, ARO) automatically.
+Both notebooks are designed to run on a GPU-equipped machine (tested on NVIDIA L40S) and download all datasets (CLEVR, DTD, ImageNet-Mini, ARO) automatically.
 
 ```bash
 pip install open_clip_torch timm torch torchvision scikit-learn matplotlib seaborn
 ```
 
-Then open `Code/Clip_Linear_Recoverability.ipynb` and run cells sequentially. Cached feature extractions and probe results are stored in `results/` to avoid redundant computation.
+Open `Code/Clip_Linear_Recoverability.ipynb` and run cells sequentially for the main CLIP analysis. Run `Code/Image_Net_MAE,_DINO.ipynb` for the MAE/DINO comparison. Cached feature extractions and probe results are stored in `results/` to avoid redundant computation.
 
 ## Citation
 

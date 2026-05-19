@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and model caches (large, re-downloadable)
+clevr_val_images/
+clevr_full.zip
+clevr_*.zip
+imagenet-mini/
+data/
+*_feature_cache/
+imagenetmini_viz_cache/
+*.npz
+
+# Kaggle credentials
+~/.kaggle/
+
+# Figures and results are tracked (small enough)
